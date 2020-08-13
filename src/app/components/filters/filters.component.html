@@ -1,0 +1,13 @@
+<ng-container *ngIf="form">
+  <div class="filters-wrapper" [formGroup]="form">
+    <ng-container *ngFor="let filter of filters">
+      <section class="filter-section">
+        <mat-checkbox [formControlName]="filter.name">{{ filter?.label }}</mat-checkbox>
+      </section>
+    </ng-container>
+    <mat-form-field class="filter-section">
+      <input matInput formControlName="textSearch" type="text" placeholder="Поиск">
+    </mat-form-field>
+    <button mat-raised-button class="filter-section" (click)="resetFilters()">Сбросить фильтр</button>
+  </div>
+</ng-container>

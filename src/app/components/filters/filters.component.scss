@@ -1,0 +1,9 @@
+.filters-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  .filter-section {
+    margin: auto;
+  }
+}

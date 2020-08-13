@@ -1,0 +1,7 @@
+<ng-container *ngIf="card">
+  <mat-card class="card">
+    <mat-card-title>{{ card.title }}</mat-card-title>
+    <mat-card-subtitle> {{ card.author }}</mat-card-subtitle>
+    <mat-card-footer>{{ card.level | toUpperCase }} / {{ card.language }}</mat-card-footer>
+  </mat-card>
+</ng-container>

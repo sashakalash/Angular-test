@@ -1,0 +1,8 @@
+<app-filters></app-filters>
+<mat-grid-list cols="3" rowHeight="1:1">
+  <ng-container *ngFor="let cardItem of cardList$ | async">
+    <mat-grid-tile>
+      <app-card-component [card]="cardItem"></app-card-component>
+    </mat-grid-tile>
+  </ng-container>
+</mat-grid-list>
